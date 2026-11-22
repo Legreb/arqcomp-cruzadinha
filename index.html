@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cruzadinha de Arquitetura Computacional</title>
+  <meta name="description" content="Jogo de cruzadinha para treinar os termos de Arquitetura Computacional.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <p class="etiqueta">Atividade Avaliativa III &middot; Sprint 3</p>
+    <h1>Cruzadinha de Arquitetura Computacional</h1>
+    <p class="subtitulo">
+      Leia a pista, descubra a palavra e digite as letras direto nas casas do tabuleiro.
+    </p>
+  </header>
+
+  <p id="aviso-pistas" class="aviso" role="status" hidden></p>
+
+  <main class="layout">
+    <section class="painel painel--tabuleiro" aria-label="Tabuleiro da cruzadinha">
+      <div class="barra">
+        <p id="contador" class="contador" aria-live="polite">0 de 16 palavras</p>
+        <div class="botoes">
+          <button id="btn-conferir" class="botao botao--primario" type="button">Conferir</button>
+          <button id="btn-reiniciar" class="botao" type="button">Reiniciar</button>
+        </div>
+      </div>
+
+      <p id="pista-atual" class="pista-atual" aria-live="polite">Clique em uma pista ou em uma casa para começar.</p>
+
+      <div class="rolagem">
+        <div id="grade" class="grade" role="group" aria-label="Grade da cruzadinha"></div>
+      </div>
+
+      <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+
+      <p class="ajuda">
+        Clique em uma pista para ir até a palavra. Use as setas do teclado para navegar
+        e clique de novo na casa para trocar entre horizontal e vertical.
+      </p>
+    </section>
+
+    <aside class="painel painel--pistas">
+      <section class="bloco-pistas">
+        <h2>Horizontais</h2>
+        <ul id="pistas-horizontais" class="lista-pistas"></ul>
+      </section>
+
+      <section class="bloco-pistas">
+        <h2>Verticais</h2>
+        <ul id="pistas-verticais" class="lista-pistas"></ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito com HTML, CSS e JavaScript puros.</p>
+  </footer>
+
+  <script src="pistas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
