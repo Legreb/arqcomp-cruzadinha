@@ -5,6 +5,8 @@
    As pistas estão TODAS EM BRANCO de propósito: escrever a pista com as suas
    palavras é a parte da atividade que faz você aprender o conceito.
 
+   O número do comentário é o mesmo número que aparece no tabuleiro.
+
    REGRAS (estão no PDF da atividade):
      - no máximo 15 palavras por pista;
      - a pista NÃO pode conter a resposta, nem parte dela, nem a sigla por extenso;
@@ -32,20 +34,20 @@
    ========================================================================== */
 
 const PISTAS = {
-  /* 1  · CPU */                                     CPU: "",
-  /* 2  · ULA */                                     ULA: "",
-  /* 3  · UC (Unidade de Controle) */                 UC: "",
-  /* 4  · registradores */                           REGISTRADORES: "",
-  /* 5  · RAM */                                     RAM: "",
-  /* 6  · ROM */                                     ROM: "",
-  /* 7  · EEPROM */                                  EEPROM: "",
-  /* 8  · Flash */                                   FLASH: "",
-  /* 9  · cache */                                   CACHE: "",
-  /* 10 · memória de massa (armazenamento) */        MEMORIADEMASSA: "",
-  /* 11 · DMA */                                     DMA: "",
+  /* 1  · cache */                                   CACHE: "",
+  /* 2  · DMA */                                     DMA: "",
+  /* 3  · microcontrolador */                        MICROCONTROLADOR: "",
+  /* 4  · dual core */                               DUALCORE: "",
+  /* 5  · UC (Unidade de Controle) */                 UC: "",
+  /* 6  · CPU */                                     CPU: "",
+  /* 7  · registradores */                           REGISTRADORES: "",
+  /* 8  · quad core */                               QUADCORE: "",
+  /* 9  · data bus (barramento de dados) */          DATABUS: "",
+  /* 10 · ULA */                                     ULA: "",
+  /* 11 · RAM */                                     RAM: "",
   /* 12 · address bus (barramento de endereço) */    ADDRESSBUS: "",
-  /* 13 · data bus (barramento de dados) */          DATABUS: "",
-  /* 14 · microcontrolador */                        MICROCONTROLADOR: "",
-  /* 15 · dual core */                               DUALCORE: "",
-  /* 16 · quad core */                               QUADCORE: "",
+  /* 13 · EEPROM */                                  EEPROM: "",
+  /* 14 · memória de massa (armazenamento) */        MEMORIADEMASSA: "",
+  /* 15 · ROM */                                     ROM: "",
+  /* 16 · Flash */                                   FLASH: "",
 };
