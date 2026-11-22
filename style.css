@@ -1,0 +1,401 @@
+/* ==========================================================================
+   CRUZADINHA DE ARQUITETURA COMPUTACIONAL — estilos
+   ========================================================================== */
+
+:root {
+  --fundo: #f1f5f9;
+  --superficie: #ffffff;
+  --borda: #cbd5e1;
+  --borda-forte: #94a3b8;
+  --texto: #0f172a;
+  --texto-suave: #475569;
+  --acento: #4f46e5;
+  --acento-claro: #eef2ff;
+  --certo-fundo: #dcfce7;
+  --certo-borda: #16a34a;
+  --errado-fundo: #fee2e2;
+  --errado-borda: #dc2626;
+  --alerta: #b45309;
+  --alerta-fundo: #fef3c7;
+  --raio: 14px;
+  --tamanho-casa: clamp(26px, 3.2vw, 42px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 20px 40px;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ---------- cabeçalho ---------- */
+
+.cabecalho {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 0 20px;
+}
+
+.etiqueta {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e11d48;
+}
+
+.cabecalho h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.2;
+}
+
+.subtitulo {
+  margin: 10px 0 0;
+  max-width: 60ch;
+  color: var(--texto-suave);
+}
+
+/* ---------- aviso de pistas pendentes ---------- */
+
+.aviso {
+  max-width: 1180px;
+  margin: 0 auto 16px;
+  padding: 12px 16px;
+  border: 1px solid #fcd34d;
+  border-left: 5px solid var(--alerta);
+  border-radius: 10px;
+  background: var(--alerta-fundo);
+  color: var(--alerta);
+  font-size: 0.94rem;
+  font-weight: 600;
+}
+
+/* ---------- estrutura ---------- */
+
+.layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 20px;
+  align-items: start;
+}
+
+.painel {
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio);
+  padding: 18px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+/* ---------- barra de ações ---------- */
+
+.barra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.contador {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.botoes {
+  display: flex;
+  gap: 8px;
+}
+
+.botao {
+  padding: 9px 18px;
+  border: 1px solid var(--borda-forte);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--texto);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+
+.botao:hover {
+  background: #f8fafc;
+  border-color: var(--texto-suave);
+}
+
+.botao:active {
+  transform: translateY(1px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.botao--primario {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: #fff;
+}
+
+.botao--primario:hover {
+  background: #4338ca;
+  border-color: #4338ca;
+}
+
+/* ---------- pista da casa em foco ---------- */
+
+.pista-atual {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  border-left: 4px solid var(--acento);
+  border-radius: 8px;
+  background: var(--acento-claro);
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #312e81;
+}
+
+.pista-atual:empty {
+  display: none;
+}
+
+/* ---------- tabuleiro ---------- */
+
+.rolagem {
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: repeat(var(--colunas), var(--tamanho-casa));
+  grid-template-rows: repeat(var(--linhas), var(--tamanho-casa));
+  gap: 2px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.casa {
+  position: relative;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 4px;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.casa__numero {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--texto-suave);
+  pointer-events: none;
+}
+
+.casa__entrada {
+  width: 100%;
+  height: 100%;
+  padding: 6px 0 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--texto);
+  font-family: inherit;
+  font-size: calc(var(--tamanho-casa) * 0.48);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.casa__entrada:focus {
+  outline: none;
+}
+
+.casa.ativa {
+  background: var(--acento-claro);
+  border-color: var(--acento);
+  box-shadow: inset 0 0 0 2px var(--acento);
+}
+
+.casa.certa {
+  background: var(--certo-fundo);
+  border-color: var(--certo-borda);
+}
+
+.casa.errada {
+  background: var(--errado-fundo);
+  border-color: var(--errado-borda);
+}
+
+.mensagem {
+  min-height: 1.4em;
+  margin: 14px 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--texto-suave);
+}
+
+.ajuda {
+  margin: 8px 0 0;
+  font-size: 0.83rem;
+  color: var(--texto-suave);
+}
+
+/* ---------- pistas ---------- */
+
+.painel--pistas {
+  display: grid;
+  gap: 22px;
+}
+
+.bloco-pistas h2 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--texto-suave);
+}
+
+.lista-pistas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.pista {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+  padding: 10px 12px;
+  border: 1px solid var(--borda);
+  border-left: 4px solid var(--borda-forte);
+  border-radius: 10px;
+  background: var(--superficie);
+  color: var(--texto);
+  font-family: inherit;
+  font-size: 0.92rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.pista:hover {
+  background: #f8fafc;
+  border-color: var(--acento);
+}
+
+.pista:focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+}
+
+.pista__numero {
+  min-width: 24px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--acento-claro);
+  color: var(--acento);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pista__texto--vazia {
+  color: var(--alerta);
+  font-style: italic;
+  font-size: 0.86rem;
+}
+
+.pista__aviso {
+  grid-column: 2;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--alerta);
+}
+
+.pista--atual {
+  background: var(--acento-claro);
+  border-color: var(--acento);
+  border-left-color: var(--acento);
+}
+
+.pista--resolvida {
+  border-left-color: var(--certo-borda);
+  background: var(--certo-fundo);
+}
+
+.pista--resolvida .pista__numero {
+  background: var(--certo-borda);
+  color: #fff;
+}
+
+.pista--errada {
+  border-left-color: var(--errado-borda);
+}
+
+/* ---------- rodapé ---------- */
+
+.rodape {
+  max-width: 1180px;
+  margin: 26px auto 0;
+  font-size: 0.82rem;
+  color: var(--texto-suave);
+}
+
+.rodape p {
+  margin: 0;
+}
+
+/* ---------- telas menores ---------- */
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .painel--pistas {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 0 12px 32px;
+  }
+
+  .painel {
+    padding: 14px;
+  }
+
+  .barra {
+    justify-content: center;
+  }
+
+  .botoes {
+    width: 100%;
+  }
+
+  .botao {
+    flex: 1;
+  }
+}
