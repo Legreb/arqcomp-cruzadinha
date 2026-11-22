@@ -2,8 +2,8 @@
    PISTAS DA CRUZADINHA  —  É AQUI QUE VOCÊ ESCREVE
    ==========================================================================
 
-   As pistas estão TODAS EM BRANCO de propósito: escrever a pista com as suas
-   palavras é a parte da atividade que faz você aprender o conceito.
+   As pistas são escritas por você: explicar com as suas palavras é a parte
+   da atividade que faz o conceito ficar na cabeça.
 
    O número do comentário é o mesmo número que aparece no tabuleiro.
 
@@ -34,20 +34,20 @@
    ========================================================================== */
 
 const PISTAS = {
-CACHE: "Memória rápida e volátil que fica no processador que salva cópias de dados enviados para RAM",
-  /* 2  · DMA */                                     DMA: "",
-MICROCONTROLADOR: "Chip que reúne vários componentes em apenas um",
-DUALCORE: "Permite a execução de duas instruções ao mesmo tempo",
-UC: "Lê as instruções, decodifica o que fazer e manda pros outros componentes",
-CPU: "Cérebro do computador responsável por buscar e executar as instruções dos programas",
-REGISTRADORES: "Memória mais rápida do computador, armazenam apenas o que está em uso direto",
-QUADCORE: "Permite a execução de 4 instruções ao mesmo tempo",
-  /* 9  · data bus (barramento de dados) */          DATABUS: "",
-ULA: "Parte encarregada de realizar cálculos matemáticos e operações lógicas",
-RAM: "Memória volátil considerada a principal de trabalho do sistema",
-  /* 12 · address bus (barramento de endereço) */    ADDRESSBUS: "",
-  /* 13 · EEPROM */                                  EEPROM: "",
-MEMORIADEMASSA: "Usado para guardar informações permanentemente",
-ROM: "Memória não volátil usada pelos fabricantes para salvar instruções permanentes de inicialização",
-FLASH: "Memória não volátil usada em microcontroladores/computadores para armazenar o firmware permanentemente",
+  /* 1  · cache */                                   CACHE: "Memória rápida, volátil que fica no processador que salva cópias de dados enviados para RAM",
+  /* 2  · DMA */                                     DMA: "atalho que permite um dispositivo transferir dados direto até a memória",
+  /* 3  · microcontrolador */                        MICROCONTROLADOR: "computador completo num único chip",
+  /* 4  · dual core */                               DUALCORE: "Permite a execução de duas núcleos ao mesmo tempo",
+  /* 5  · UC (Unidade de Controle) */                 UC: "Lê as instruções, decodifica o que fazer e manda pros outros componentes",
+  /* 6  · CPU */                                     CPU: "Cérebro do computador responsável por buscar e executar as instruções dos programas",
+  /* 7  · registradores */                           REGISTRADORES: "Memória mais rápida do computador, armazenam apenas o que está em uso direto",
+  /* 8  · quad core */                               QUADCORE: "Permite a execução de 4 núcleos ao mesmo tempo",
+  /* 9  · data bus (barramento de dados) */          DATABUS: "são os caminhos por onde passa o conteúdo entre processador, memória e periféricos",
+  /* 10 · ULA */                                     ULA: "Parte encarregada de realizar cálculos matemáticos e operações lógicas",
+  /* 11 · RAM */                                     RAM: "Memória volátil considerada a principal de trabalho do sistema",
+  /* 12 · address bus (barramento de endereço) */    ADDRESSBUS: "são as vias por onde o processador informa o endereço da posição de memória que quer acessar",
+  /* 13 · EEPROM */                                  EEPROM: "memória que não perde o conteúdo ao desligar e pode ser apagada e regravada eletricamente, sem tirar o chip do lugar",
+  /* 14 · memória de massa (armazenamento) */        MEMORIADEMASSA: "Usado para guardar informações permanentemente que possui grande armazenamento",
+  /* 15 · ROM */                                     ROM: "Memória não volátil usada pelos fabricantes para salvar instruções permanentes de inicialização",
+  /* 16 · Flash */                                   FLASH: "Memória não volátil usada em microcontroladores/computadores para armazenar o firmware permanentemente",
 };
