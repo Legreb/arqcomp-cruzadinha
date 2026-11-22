@@ -6,9 +6,9 @@ as letras direto nas casas do tabuleiro.
 
 Projeto da **Atividade Avaliativa III — Sprint 3**.
 
-> **Antes de publicar:** as pistas ainda estão em branco. Elas ficam no arquivo
-> `pistas.js` e precisam ser escritas por você, com as suas palavras.
-> O guia de escrita e a tabela de rascunho estão em [PISTAS.md](PISTAS.md).
+> As pistas do jogo ficam no arquivo `pistas.js` e estão reproduzidas na
+> tabela abaixo. O guia de escrita e a ficha de rascunho estão em
+> [PISTAS.md](PISTAS.md).
 
 ## Como jogar
 
@@ -31,27 +31,26 @@ Regras das pistas (as mesmas do PDF da atividade):
 ## Palavras e pistas
 
 O tabuleiro usa as 16 palavras da lista. A coluna **Nº** é o número que
-aparece no jogo. As pistas abaixo estão **em branco de propósito**: copie para
-cá a mesma pista que você escreveu em `pistas.js`.
+aparece no jogo. As pistas abaixo são as mesmas que estão em `pistas.js`.
 
 | Nº | Termo | No tabuleiro | Direção | Pista |
 |----|-------|--------------|---------|-------|
-| 1 | cache | `CACHE` | Vertical | _(escreva aqui a sua pista)_ |
-| 2 | DMA | `DMA` | Horizontal | _(escreva aqui a sua pista)_ |
-| 3 | microcontrolador | `MICROCONTROLADOR` | Vertical | _(escreva aqui a sua pista)_ |
-| 4 | dual core | `DUALCORE` | Horizontal | _(escreva aqui a sua pista)_ |
-| 5 | UC (Unidade de Controle) | `UC` | Vertical | _(escreva aqui a sua pista)_ |
-| 6 | CPU | `CPU` | Horizontal | _(escreva aqui a sua pista)_ |
-| 7 | registradores | `REGISTRADORES` | Vertical | _(escreva aqui a sua pista)_ |
-| 8 | quad core | `QUADCORE` | Vertical | _(escreva aqui a sua pista)_ |
-| 9 | data bus (barramento de dados) | `DATABUS` | Vertical | _(escreva aqui a sua pista)_ |
-| 10 | ULA | `ULA` | Horizontal | _(escreva aqui a sua pista)_ |
-| 11 | RAM | `RAM` | Horizontal | _(escreva aqui a sua pista)_ |
-| 12 | address bus (barramento de endereço) | `ADDRESSBUS` | Vertical | _(escreva aqui a sua pista)_ |
-| 13 | EEPROM | `EEPROM` | Vertical | _(escreva aqui a sua pista)_ |
-| 14 | memória de massa (armazenamento) | `MEMORIADEMASSA` | Horizontal | _(escreva aqui a sua pista)_ |
-| 15 | ROM | `ROM` | Horizontal | _(escreva aqui a sua pista)_ |
-| 16 | Flash | `FLASH` | Horizontal | _(escreva aqui a sua pista)_ |
+| 1 | cache | `CACHE` | Vertical | Memória rápida, volátil que fica no processador que salva cópias de dados enviados para RAM |
+| 2 | DMA | `DMA` | Horizontal | atalho que permite um dispositivo transferir dados direto até a memória |
+| 3 | microcontrolador | `MICROCONTROLADOR` | Vertical | computador completo num único chip |
+| 4 | dual core | `DUALCORE` | Horizontal | Permite a execução de dois núcleos ao mesmo tempo |
+| 5 | UC (Unidade de Controle) | `UC` | Vertical | Lê as instruções, decodifica o que fazer e manda pros outros componentes |
+| 6 | CPU | `CPU` | Horizontal | Cérebro do computador responsável por buscar e executar as instruções dos programas |
+| 7 | registradores | `REGISTRADORES` | Vertical | Memória mais rápida do computador, armazenam apenas o que está em uso direto |
+| 8 | quad core | `QUADCORE` | Vertical | Permite a execução de 4 núcleos ao mesmo tempo |
+| 9 | data bus (barramento de dados) | `DATABUS` | Vertical | são os caminhos por onde passa o conteúdo entre processador, memória e periféricos |
+| 10 | ULA | `ULA` | Horizontal | Parte encarregada de realizar cálculos matemáticos e operações lógicas |
+| 11 | RAM | `RAM` | Horizontal | Memória volátil considerada a principal de trabalho do sistema |
+| 12 | address bus (barramento de endereço) | `ADDRESSBUS` | Vertical | são as vias por onde o processador informa o endereço de memória que quer acessar |
+| 13 | EEPROM | `EEPROM` | Vertical | memória que não perde o conteúdo ao desligar, pode ser apagada e regravada eletricamente |
+| 14 | memória de massa (armazenamento) | `MEMORIADEMASSA` | Horizontal | Usada para guardar informações permanentemente que possui grande armazenamento |
+| 15 | ROM | `ROM` | Horizontal | Memória não volátil usada pelos fabricantes para salvar instruções permanentes de inicialização |
+| 16 | Flash | `FLASH` | Horizontal | Memória não volátil usada em microcontroladores/computadores para armazenar o firmware permanentemente |
 
 ## Estrutura do projeto
 
