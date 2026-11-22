@@ -30,27 +30,28 @@ Regras das pistas (as mesmas do PDF da atividade):
 
 ## Palavras e pistas
 
-O tabuleiro usa as 16 palavras da lista. As pistas abaixo estão **em branco de
-propósito**: copie para cá a mesma pista que você escreveu em `pistas.js`.
+O tabuleiro usa as 16 palavras da lista. A coluna **Nº** é o número que
+aparece no jogo. As pistas abaixo estão **em branco de propósito**: copie para
+cá a mesma pista que você escreveu em `pistas.js`.
 
 | Nº | Termo | No tabuleiro | Direção | Pista |
 |----|-------|--------------|---------|-------|
-| 1 | CPU | `CPU` | Vertical | _(escreva aqui a sua pista)_ |
-| 2 | ULA | `ULA` | Horizontal | _(escreva aqui a sua pista)_ |
-| 3 | UC (Unidade de Controle) | `UC` | Vertical | _(escreva aqui a sua pista)_ |
-| 4 | registradores | `REGISTRADORES` | Vertical | _(escreva aqui a sua pista)_ |
-| 5 | RAM | `RAM` | Horizontal | _(escreva aqui a sua pista)_ |
-| 6 | ROM | `ROM` | Horizontal | _(escreva aqui a sua pista)_ |
-| 7 | EEPROM | `EEPROM` | Vertical | _(escreva aqui a sua pista)_ |
-| 8 | Flash | `FLASH` | Horizontal | _(escreva aqui a sua pista)_ |
-| 9 | cache | `CACHE` | Vertical | _(escreva aqui a sua pista)_ |
-| 10 | memória de massa (armazenamento) | `MEMORIADEMASSA` | Horizontal | _(escreva aqui a sua pista)_ |
-| 11 | DMA | `DMA` | Horizontal | _(escreva aqui a sua pista)_ |
+| 1 | cache | `CACHE` | Vertical | _(escreva aqui a sua pista)_ |
+| 2 | DMA | `DMA` | Horizontal | _(escreva aqui a sua pista)_ |
+| 3 | microcontrolador | `MICROCONTROLADOR` | Vertical | _(escreva aqui a sua pista)_ |
+| 4 | dual core | `DUALCORE` | Horizontal | _(escreva aqui a sua pista)_ |
+| 5 | UC (Unidade de Controle) | `UC` | Vertical | _(escreva aqui a sua pista)_ |
+| 6 | CPU | `CPU` | Horizontal | _(escreva aqui a sua pista)_ |
+| 7 | registradores | `REGISTRADORES` | Vertical | _(escreva aqui a sua pista)_ |
+| 8 | quad core | `QUADCORE` | Vertical | _(escreva aqui a sua pista)_ |
+| 9 | data bus (barramento de dados) | `DATABUS` | Vertical | _(escreva aqui a sua pista)_ |
+| 10 | ULA | `ULA` | Horizontal | _(escreva aqui a sua pista)_ |
+| 11 | RAM | `RAM` | Horizontal | _(escreva aqui a sua pista)_ |
 | 12 | address bus (barramento de endereço) | `ADDRESSBUS` | Vertical | _(escreva aqui a sua pista)_ |
-| 13 | data bus (barramento de dados) | `DATABUS` | Vertical | _(escreva aqui a sua pista)_ |
-| 14 | microcontrolador | `MICROCONTROLADOR` | Vertical | _(escreva aqui a sua pista)_ |
-| 15 | dual core | `DUALCORE` | Horizontal | _(escreva aqui a sua pista)_ |
-| 16 | quad core | `QUADCORE` | Vertical | _(escreva aqui a sua pista)_ |
+| 13 | EEPROM | `EEPROM` | Vertical | _(escreva aqui a sua pista)_ |
+| 14 | memória de massa (armazenamento) | `MEMORIADEMASSA` | Horizontal | _(escreva aqui a sua pista)_ |
+| 15 | ROM | `ROM` | Horizontal | _(escreva aqui a sua pista)_ |
+| 16 | Flash | `FLASH` | Horizontal | _(escreva aqui a sua pista)_ |
 
 ## Estrutura do projeto
 
