@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    PISTAS DA CRUZADINHA  —  É AQUI QUE VOCÊ ESCREVE
    ==========================================================================
 
@@ -34,20 +34,20 @@
    ========================================================================== */
 
 const PISTAS = {
-  /* 1  · cache */                                   CACHE: "",
+CACHE: "Memória rápida e volátil que fica no processador que salva cópias de dados enviados para RAM",
   /* 2  · DMA */                                     DMA: "",
-  /* 3  · microcontrolador */                        MICROCONTROLADOR: "",
-  /* 4  · dual core */                               DUALCORE: "",
-  /* 5  · UC (Unidade de Controle) */                 UC: "",
-  /* 6  · CPU */                                     CPU: "",
-  /* 7  · registradores */                           REGISTRADORES: "",
-  /* 8  · quad core */                               QUADCORE: "",
+MICROCONTROLADOR: "Chip que reúne vários componentes em apenas um",
+DUALCORE: "Permite a execução de duas instruções ao mesmo tempo",
+UC: "Lê as instruções, decodifica o que fazer e manda pros outros componentes",
+CPU: "Cérebro do computador responsável por buscar e executar as instruções dos programas",
+REGISTRADORES: "Memória mais rápida do computador, armazenam apenas o que está em uso direto",
+QUADCORE: "Permite a execução de 4 instruções ao mesmo tempo",
   /* 9  · data bus (barramento de dados) */          DATABUS: "",
-  /* 10 · ULA */                                     ULA: "",
-  /* 11 · RAM */                                     RAM: "",
+ULA: "Parte encarregada de realizar cálculos matemáticos e operações lógicas",
+RAM: "Memória volátil considerada a principal de trabalho do sistema",
   /* 12 · address bus (barramento de endereço) */    ADDRESSBUS: "",
   /* 13 · EEPROM */                                  EEPROM: "",
-  /* 14 · memória de massa (armazenamento) */        MEMORIADEMASSA: "",
-  /* 15 · ROM */                                     ROM: "",
-  /* 16 · Flash */                                   FLASH: "",
+MEMORIADEMASSA: "Usado para guardar informações permanentemente",
+ROM: "Memória não volátil usada pelos fabricantes para salvar instruções permanentes de inicialização",
+FLASH: "Memória não volátil usada em microcontroladores/computadores para armazenar o firmware permanentemente",
 };
